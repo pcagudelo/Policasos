@@ -1,5 +1,3 @@
-<script>
-const props=defineProps(['ticket']);
 
 const casos=[
     {"id":1,"fecha_creacion":"2023-11-01","resumen":"Solicitude de incripcion de matricula", "detalle":"De la manera mas atenta pido colaboracion habilitando la materia integracionj continua","solicitante": "Pablo Cesar Agudelo","asignado": "Tecnico1"},
@@ -8,14 +6,4 @@ const casos=[
     
 ];
 
-import {detalleCaso} from '@/components/detalleCaso.vue';
-export default{
-    components:{detalleCaso}
-}
-
-</script>
-<template>
-
-        <detalleCaso/>
-        
-</template>
+export default casos;

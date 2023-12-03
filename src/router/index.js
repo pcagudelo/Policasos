@@ -7,7 +7,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'login',
-      component: ()=>import("../views/login.vue")     
+      component: ()=>import('../views/Login.vue')     
     },
     {
       path: '/registrar',
@@ -20,9 +20,10 @@ const router = createRouter({
       component: ()=>import("../views/ListadoCaso.vue")     
     },
     {
-      path: '/gestion',
+      path: '/gestion/:ticket',
       name: 'gestion',
-      component: ()=>import("../views/GestionCaso.vue")    
+      component: ()=>import("../views/GestionCaso.vue"),
+      props: true    
     },
 
   ]
